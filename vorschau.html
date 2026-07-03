@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex, nofollow">
+<title>Deine neue Seite — eine Vorschau von Lechcode</title>
+<meta name="description" content="Hallo Laura — hier ist ein erster Entwurf deiner neuen Website. Zwei Welten, sauber getrennt. Schau selbst.">
+<meta property="og:title" content="Laura — deine neue Seite ist da">
+<meta property="og:description" content="Ein erster Entwurf: Hub + zwei getrennte Seiten für Firmen und für dich. Klar, schnell, cookiefrei.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://lechcode.github.io/laura-schnelle-vorschau/vorschau.html">
+<meta property="og:image" content="https://lechcode.github.io/laura-schnelle-vorschau/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#2A2C56">
+<link rel="icon" href="assets/logo.svg">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.v-intro{padding:clamp(80px,12vw,140px) 0 clamp(40px,6vw,70px);text-align:center}
+.v-intro .eyebrow{justify-content:center}
+.v-intro h1{font-size:var(--step-4);margin:18px auto 0;max-width:17ch}
+.v-intro p{color:var(--ink-soft);font-size:var(--step-1);max-width:54ch;margin:20px auto 0;line-height:1.5}
+.center-head{text-align:center;max-width:62ch;margin:0 auto}
+.center-head h2{font-size:var(--step-3)}
+.center-head p{color:var(--ink-soft);font-size:var(--step-1);margin-top:12px}
+.cmp{position:relative;max-width:1000px;margin:38px auto 0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:1120/700;touch-action:pan-y;user-select:none;background:var(--indigo-deep)}
+.cmp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.cmp-top{position:absolute;inset:0;clip-path:inset(0 50% 0 0)}
+.cmp-handle{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;transform:translateX(-50%);z-index:3;cursor:ew-resize}
+.cmp-handle .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:46px;height:46px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.cmp-lab{position:absolute;top:14px;z-index:2;font-family:var(--sans);font-weight:600;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:100px;color:#fff}
+.cmp-lab.l{left:14px;background:rgba(33,30,41,.72)}
+.cmp-lab.r{right:14px;background:var(--indigo)}
+.phones{display:flex;gap:clamp(18px,4vw,44px);justify-content:center;flex-wrap:wrap;margin-top:40px}
+.phone{width:230px;max-width:44vw}
+.phone .screen{position:relative;border:9px solid #211E29;border-radius:34px;overflow:hidden;aspect-ratio:480/864;background:#000;box-shadow:0 24px 50px -28px rgba(0,0,0,.5)}
+.phone .screen::before{content:"";position:absolute;top:9px;left:50%;transform:translateX(-50%);width:74px;height:19px;background:#211E29;border-radius:0 0 12px 12px;z-index:2}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top}
+.phone .cap{text-align:center;margin-top:14px;font-family:var(--sans);font-weight:600;font-size:.82rem}
+.phone .cap.alt{color:var(--muted)}
+.phone .cap.neu{color:var(--indigo)}
+.mob-stat{text-align:center;color:var(--muted);font-size:var(--step--1);max-width:54ch;margin:26px auto 0}
+.fixes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.fix{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;gap:14px}
+.fix .ic{flex:none;width:34px;height:34px;border-radius:9px;background:var(--indigo-soft);color:var(--indigo-deep);display:grid;place-items:center;font-family:var(--sans);font-weight:600}
+.fix b{font-family:var(--sans);font-weight:600;display:block;margin-bottom:4px}
+.fix p{color:var(--ink-soft);font-size:var(--step--1)}
+.deal{background:var(--indigo-deep);color:#EDEBF5;border-radius:var(--radius);padding:clamp(30px,5vw,52px);text-align:center;margin-top:38px}
+.deal .price{font-family:var(--display);font-weight:600;font-size:clamp(2.4rem,6vw,3.6rem);color:#fff;line-height:1}
+.deal .price small{display:block;font-size:1rem;color:var(--apricot);font-weight:600;margin-bottom:8px;letter-spacing:.06em;text-transform:uppercase;font-family:var(--sans)}
+.deal p{color:#BCBAD2;max-width:48ch;margin:16px auto 0}
+.deal-steps{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.deal-step{background:rgba(255,255,255,.06);border-radius:12px;padding:14px 18px;font-size:var(--step--1);color:#D6D5E4;max-width:210px}
+.deal-step b{display:block;color:#fff;font-family:var(--sans);font-weight:600;margin-bottom:3px}
+.needs{margin-top:36px;display:grid;gap:12px;max-width:780px;margin-inline:auto}
+.need{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--apricot-deep);border-radius:0 12px 12px 0;padding:16px 20px;color:var(--ink-soft);font-size:var(--step-0)}
+.need b{color:var(--ink);font-family:var(--sans);font-weight:600}
+.lcbook{background:#16130c;color:#f3ead9;border-radius:20px;padding:clamp(30px,5vw,50px);text-align:center;margin:56px auto 0;max-width:900px;font-family:var(--sans);position:relative;overflow:hidden}
+.lcbook h3{font-family:var(--display);color:#fff;font-size:var(--step-2);margin-bottom:12px}
+.lcbook p{color:#cdbfa6;max-width:46ch;margin:0 auto 22px;font-size:var(--step-0)}
+.lcbook-btn{display:inline-flex;align-items:center;gap:9px;background:#e8923f;color:#1a1206;font-family:var(--sans);font-weight:600;padding:15px 26px;border-radius:100px;font-size:var(--step-0)}
+.lcbook-btn:hover{background:#e7b964}
+.lcbook .wave{height:8px;background:linear-gradient(90deg,#e8923f,#e7b964,#e8923f);border-radius:6px;max-width:120px;margin:0 auto 20px;opacity:.9}
+.lcbook .hint{margin-top:14px;color:#8f8874;font-size:.78rem}
+.v-foot{text-align:center;padding:50px 0;color:var(--muted);font-size:var(--step--1)}
+.v-foot a{color:var(--indigo)}
+@media(max-width:720px){.fixes{grid-template-columns:1fr}.cmp-handle .knob{width:40px;height:40px}}
+</style>
+</head>
+<body>
+<main id="main">
+
+<section class="v-intro">
+  <div class="wrap">
+    <span class="eyebrow">Eine Vorschau von Lechcode</span>
+    <h1>Hallo Laura — deine neue Seite ist <span class="mark">da</span>.</h1>
+    <p>Schön, dass du dich gemeldet hast. Wir haben deine Idee aufgegriffen: eine Startseite, die freundlich fragt „Firma oder privat?" — und dahinter zwei getrennte Seiten. Zieh am Regler, wirf einen Blick aufs Handy, und schau, ob du dich darin wiederfindest.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="center-head reveal">
+      <span class="eyebrow" style="justify-content:center">Vorher / Nachher</span>
+      <h2 style="margin-top:14px">Zieh den Regler.</h2>
+      <p>Links deine bisherige Startseite (mit Cookie-Banner), rechts der neue Entwurf.</p>
+    </div>
+    <div class="cmp" id="cmp">
+      <img class="base" src="assets/vorschau-assets/slider-neu.jpg" alt="Neue Seite" draggable="false">
+      <div class="cmp-top" id="cmpTop"><img src="assets/vorschau-assets/slider-alt.jpg" alt="Bisherige Seite" draggable="false"></div>
+      <span class="cmp-lab l">Vorher</span>
+      <span class="cmp-lab r">Nachher</span>
+      <div class="cmp-handle" id="cmpHandle"><span class="knob"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3A3E72" stroke-width="2.4"><path d="M9 6 3 12l6 6M15 6l6 6-6 6"/></svg></span></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surface-2);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="center-head reveal">
+      <span class="eyebrow" style="justify-content:center">Am Handy</span>
+      <h2 style="margin-top:14px">So sehen dich Menschen unterwegs.</h2>
+    </div>
+    <div class="phones reveal">
+      <div class="phone"><div class="screen"><img src="assets/vorschau-assets/phone-alt.jpg" alt="Bisherige Seite mobil"></div><div class="cap alt">Bisher</div></div>
+      <div class="phone"><div class="screen"><img src="assets/vorschau-assets/phone-neu.jpg" alt="Neue Seite mobil"></div><div class="cap neu">Neu</div></div>
+    </div>
+    <p class="mob-stat reveal">Über 60 % aller Website-Besuche kommen heute vom Smartphone — genau dort entscheidet sich der erste Eindruck.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center-head reveal">
+      <span class="eyebrow" style="justify-content:center">Das haben wir gleich mitgelöst</span>
+      <h2 style="margin-top:14px">Ein paar Dinge sind uns aufgefallen.</h2>
+    </div>
+    <div class="fixes">
+      <div class="fix reveal"><span class="ic">✓</span><div><b>Zwei Themen auf einer Seite</b><p>Business-GfK und Beziehung lagen bunt gemischt zusammen. Jetzt: eine Startseite mit zwei klaren Türen — und dahinter zwei eigenständige Seiten. Beide direkt verlinkbar (Instagram → Beziehung, Firmen-Mail → One-Pager).</p></div></div>
+      <div class="fix reveal"><span class="ic">✓</span><div><b>Cookie-Banner &amp; Meta-Pixel</b><p>Die alte Seite lud ein Facebook-Pixel und brauchte einen Cookie-Banner. Die neue ist cookiefrei — kein Banner, keine Tracker, Schriften lokal.</p></div></div>
+      <div class="fix reveal"><span class="ic">✓</span><div><b>Podcast war nicht eingebunden</b><p>„Peace, Love &amp; Therapy" lief nur über einen Consent-Player. Jetzt hat er eine feste, cookiefreie Sektion mit Direkt-Links zu Spotify &amp; Co.</p></div></div>
+      <div class="fix reveal"><span class="ic">✓</span><div><b>Business = nur ein One-Pager</b><p>Für Firmen brauchst du etwas zum Verschicken. „High Performance meets Vulnerability" ist jetzt eine eigene, klare Seite mit deutlichem Weg zum Infogespräch.</p></div></div>
+      <div class="fix reveal"><span class="ic">✓</span><div><b>Impressum war unvollständig</b><p>Als Heilpraktikerin für Psychotherapie fehlten Pflichtangaben (Behörde, Berufsbezeichnung). Zum Livegang schließen wir das sauber (§ 5 DDG) — mit dabei.</p></div></div>
+      <div class="fix reveal"><span class="ic">✓</span><div><b>Ladezeit &amp; Klarheit</b><p>Weniger Ballast, klare Struktur, echte Fotos statt Stock im Business-Bereich — schneller und persönlicher.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surface-2);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="center-head reveal">
+      <span class="eyebrow" style="justify-content:center">Was das für dich heißt</span>
+      <h2 style="margin-top:14px">Unser Startangebot.</h2>
+    </div>
+    <div class="deal reveal">
+      <div class="price"><small>Die ersten 10 Websites</small>500 €<span style="font-size:1.4rem"> einmalig</span></div>
+      <p>Komplett inklusive Umzug deiner Domain. Pflege danach 19 € / Monat, monatlich kündbar. Keine Agentur-Preise, kein Abo-Zwang.</p>
+      <div class="deal-steps">
+        <div class="deal-step"><b>1 · Entwurf</b>Steht (den siehst du gerade)</div>
+        <div class="deal-step"><b>2 · Gespräch</b>30 Min mit Michael, in Ruhe</div>
+        <div class="deal-step"><b>3 · Finale Version</b>binnen 24 h nach dem Gespräch</div>
+      </div>
+      <div style="margin-top:30px"><a href="index.html" class="btn btn-primary" style="background:var(--indigo);color:#F1EFFA">Deine neue Seite ansehen <span class="ar">→</span></a></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center-head reveal">
+      <span class="eyebrow" style="justify-content:center">Was wir noch von dir brauchen</span>
+      <h2 style="margin-top:14px">Ein paar Dinge fehlen uns noch.</h2>
+    </div>
+    <div class="needs">
+      <div class="need reveal"><b>Eine einheitliche E-Mail</b> — aktuell stehen drei nebeneinander (outlook.de, lauraschnelle.de, lauraschnelle.com). Welche soll es sein?</div>
+      <div class="need reveal"><b>Impressums-Angaben</b> — Berufsbezeichnung, zuständiges Gesundheitsamt &amp; Jahr der HP-Erlaubnis, USt-IdNr. bzw. Kleinunternehmer-Hinweis.</div>
+      <div class="need reveal"><b>Fotos &amp; Rechte</b> — dürfen wir deine Fotos nutzen, wer hat sie gemacht? Gern mehr warme Bilder für die Beziehungs-Seite (die Business-Bilder waren Stock).</div>
+      <div class="need reveal"><b>Wie offen beim Thema Beziehung?</b> — sollen „offene / nicht-monogame Beziehung" explizit auf der Seite stehen? Dein Call — ich richte mich danach.</div>
+      <div class="need reveal"><b>Angebote &amp; Preise</b> — bleibt alles „auf Anfrage" oder nennen wir Rahmen/Preise (1:1, Paar, Workbook, Firmen-Ausbildung)?</div>
+      <div class="need reveal"><b>Terminlink &amp; Podcast-Cover</b> — dein Buchungslink (falls vorhanden) und ob wir das aktuelle Cover behalten.</div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="lcbook reveal">
+    <div class="wave"></div>
+    <h3>Lust auf ein kurzes Gespräch, Laura?</h3>
+    <p>Ca. 30 Minuten, unverbindlich. Wir gehen gemeinsam durch die Seite und deine Wünsche.</p>
+    <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1vusFYCV6O45i109a0J5ruEFtWCT7iFsq5t4Mb2KvQmNhdkMtlddml9dx5V2jButjV2SUGapFg?gv=true" target="_blank" rel="noopener noreferrer" class="lcbook-btn">Termin aussuchen →</a>
+    <div class="hint">öffnet unseren Kalender in neuem Tab — Seite bleibt cookiefrei</div>
+  </div>
+</div>
+
+<div class="v-foot">
+  Unverbindliche Design-Vorschau — erstellt von Lechcode, Landsberg am Lech.<br>
+  Fragen? <a href="mailto:info@lechcode.de">info@lechcode.de</a>
+</div>
+</main>
+
+<script>
+(function(){
+  var cmp=document.getElementById('cmp'),top=document.getElementById('cmpTop'),h=document.getElementById('cmpHandle');
+  if(cmp){
+    var set=function(p){p=Math.max(0,Math.min(100,p));top.style.clipPath='inset(0 '+(100-p)+'% 0 0)';h.style.left=p+'%';};
+    var drag=false;
+    var move=function(x){var r=cmp.getBoundingClientRect();set((x-r.left)/r.width*100);};
+    cmp.addEventListener('pointerdown',function(e){drag=true;try{cmp.setPointerCapture(e.pointerId)}catch(_){}move(e.clientX);});
+    cmp.addEventListener('pointermove',function(e){if(drag)move(e.clientX);});
+    cmp.addEventListener('pointerup',function(){drag=false;});
+    cmp.addEventListener('pointercancel',function(){drag=false;});
+    set(50);
+  }
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('.reveal');var show=function(e){e.classList.add('in')};
+  if(reduce){els.forEach(show);}else if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){show(x.target);io.unobserve(x.target)}})},{threshold:0,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(e){io.observe(e)});
+    var fb=function(){els.forEach(function(e){var r=e.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)show(e)})};
+    window.addEventListener('scroll',fb,{passive:true});fb();setTimeout(function(){els.forEach(show)},2600);
+  }else{els.forEach(show)}
+})();
+</script>
+</body>
+</html>
