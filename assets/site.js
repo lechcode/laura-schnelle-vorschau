@@ -23,6 +23,19 @@
       });
     });
   }
+  var needChips=document.getElementById('needChips'), needEcho=document.getElementById('needEcho');
+  if(needChips&&needEcho){
+    needChips.querySelectorAll('.need-chip').forEach(function(chip){
+      chip.addEventListener('click',function(){
+        var wasOn=chip.getAttribute('aria-pressed')==='true';
+        needChips.querySelectorAll('.need-chip').forEach(function(c){c.setAttribute('aria-pressed','false')});
+        needEcho.classList.remove('show');
+        if(wasOn){return;}
+        chip.setAttribute('aria-pressed','true');
+        setTimeout(function(){needEcho.textContent=chip.getAttribute('data-echo');needEcho.classList.add('show');},150);
+      });
+    });
+  }
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var els=document.querySelectorAll('.reveal');
   var show=function(e){e.classList.add('in')};
