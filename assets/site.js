@@ -9,9 +9,13 @@
       burger.setAttribute('aria-label',open?'Menü schließen':'Menü öffnen');
       document.body.style.overflow=open?'hidden':'';
     });
-    mmenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){
-      mmenu.classList.remove('open');burger.setAttribute('aria-expanded',false);document.body.style.overflow='';
-    })});
+    var closeMenu=function(){
+      mmenu.classList.remove('open');burger.setAttribute('aria-expanded',false);
+      burger.setAttribute('aria-label','Menü öffnen');document.body.style.overflow='';
+    };
+    mmenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu)});
+    var brand=document.querySelector('.brand');
+    if(brand)brand.addEventListener('click',closeMenu);
   }
   var tpTrack=document.getElementById('tpTrack');
   if(tpTrack){
