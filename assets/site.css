@@ -263,6 +263,7 @@ form input::placeholder,form textarea::placeholder{color:#8482A0}
 .site-footer{background:#1B1922;color:#9A96A8;padding:56px 0 34px}
 .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
 .foot-brand{font-family:var(--display);font-weight:600;font-size:1.35rem;color:#EDEBF3}
+.foot-brand .footword{height:19px;width:auto;display:block;margin-bottom:2px}
 .foot-brand p{font-family:var(--sans);font-weight:400;font-size:var(--step--1);color:#7E7A90;margin-top:10px;max-width:34ch}
 .foot-col h4{font-family:var(--sans);font-weight:600;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:#7E7A90;margin-bottom:14px}
 .foot-col a{display:block;font-size:var(--step--1);color:#B7B4C6;padding:5px 0}
