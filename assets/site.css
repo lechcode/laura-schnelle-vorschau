@@ -54,7 +54,10 @@ strong,b{font-weight:600}
 .nav.scrolled{background:rgba(245,241,234,.82);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
 .nav-in{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
 .brand{font-family:var(--display);font-weight:600;font-size:1.2rem;letter-spacing:-.01em;display:flex;align-items:center;gap:11px}
+.brand{gap:10px}
 .brand .brandmark{height:30px;width:auto;flex:none;display:block}
+.brand .brandword{height:15px;width:auto;flex:none;display:block}
+@media (max-width:520px){.brand .brandword{height:13px}}
 .nav-links{display:flex;align-items:center;gap:28px}
 .nav-links a:not(.btn){font-size:var(--step--1);font-weight:600;color:var(--ink-soft);position:relative;padding:4px 0}
 .nav-links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--apricot-deep);transition:width .25s var(--ease)}
