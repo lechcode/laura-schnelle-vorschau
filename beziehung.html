@@ -243,20 +243,20 @@
         <p style="color:#fff;font-size:var(--step-1);margin:0 0 6px">Lieber anrufen? <a href="tel:+491736735291">+49&nbsp;173&nbsp;6735291</a></p>
         <p class="altc">Oder schreiben: <a href="mailto:coaching@lauraschnelle.com">coaching@lauraschnelle.com</a></p>
       </div>
-      <form class="reveal" onsubmit="event.preventDefault();this.querySelector('.demo-ok').style.display='block';">
-        <div class="demo-note">Demo-Formular — im Live-Betrieb landet deine Nachricht direkt in Lauras Postfach.</div>
+      <form id="cf" class="reveal">
         <label for="name">Name</label>
         <input id="name" name="name" placeholder="Dein Name" required>
-        <label for="mail">E-Mail</label>
-        <input id="mail" name="mail" type="email" placeholder="name@beispiel.de" required>
+        <label for="email">E-Mail</label>
+        <input id="email" name="email" type="email" placeholder="name@beispiel.de" required>
         <label for="msg">Worum geht es dir?</label>
         <textarea id="msg" name="msg" placeholder="Ein, zwei Sätze genügen."></textarea>
+        <div class="hp" aria-hidden="true"><label for="_honey">Bitte leer lassen</label><input id="_honey" name="_honey" tabindex="-1" autocomplete="off"></div>
         <div class="consent">
           <input id="ok" type="checkbox" required>
-          <label for="ok">Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden. (Datenschutz)</label>
+          <label for="ok">Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden. (<a href="datenschutz.html">Datenschutz</a>)</label>
         </div>
         <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Nachricht senden</button>
-        <p class="demo-ok" style="display:none;color:var(--apricot);margin-top:14px;font-size:var(--step--1)">Danke — im Live-Betrieb wäre deine Nachricht jetzt unterwegs. Bis wir sprechen: einmal tief durchatmen.</p>
+        <p id="cfmsg" class="form-msg" role="status" aria-live="polite"></p>
       </form>
     </div>
   </div>

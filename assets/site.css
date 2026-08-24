@@ -203,6 +203,11 @@ form input,form textarea,form select{width:100%;padding:13px 15px;border-radius:
 form textarea{min-height:110px;resize:vertical}
 form input::placeholder,form textarea::placeholder{color:#8482A0}
 .demo-note{font-size:.8rem;color:#A5A2BE;background:rgba(255,255,255,.05);border:1px dashed rgba(255,255,255,.17);border-radius:10px;padding:10px 12px;margin-bottom:16px}
+/* Honeypot — für Menschen unsichtbar, für Bots ein Köder. Nicht display:none (manche Bots ignorieren das). */
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-msg{margin:14px 0 0;font-size:var(--step--1);line-height:1.5;min-height:1px}
+.form-msg.ok{color:var(--apricot)}
+.form-msg.err{color:#FFB4A8}
 .consent{display:flex;gap:10px;align-items:flex-start;margin-bottom:16px}
 .consent input{width:auto;margin:4px 0 0}
 .consent label{font-weight:400;color:#BCBAD2;font-size:.82rem;line-height:1.45}

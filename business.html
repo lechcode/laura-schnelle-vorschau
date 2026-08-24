@@ -155,11 +155,11 @@
     <div class="sec-head center reveal">
       <span class="eyebrow" style="justify-content:center">Warum Laura</span>
       <h2 style="margin-top:16px">Fundiert, praxisnah, menschlich.</h2>
-      <p>Seit 2018 gebe ich Seminare für Gewaltfreie Kommunikation, seit 2020 begleite ich Menschen in individueller Arbeit — als zertifizierte GfK-Trainerin und Heilpraktikerin für Psychotherapie.</p>
+      <p>Seit 2018 gebe ich Seminare für Gewaltfreie Kommunikation, seit 2020 begleite ich Menschen in individueller Arbeit — als zertifizierte GfK-Trainerin.</p>
     </div>
     <div class="quals reveal" style="justify-content:center;margin-top:30px">
       <span class="qual">Zertifizierte GfK-Trainerin</span>
-      <span class="qual">Heilpraktikerin für Psychotherapie</span>
+      <span class="qual">Seminare seit 2018</span>
       <span class="qual">Nervensystem-Ansatz</span>
     </div>
     <p class="lead-note reveal" style="text-align:center;margin-top:24px">Echte Kundenstimmen gibt es auf <a href="https://www.trustpilot.com/review/lauraschnelle.com" target="_blank" rel="noopener noreferrer" class="klar">Trustpilot</a> — cookiefrei verlinkt.</p>
@@ -181,22 +181,22 @@
         <p style="color:#fff;font-size:var(--step-1);margin:0 0 6px">Lieber anrufen? <a href="tel:+491736735291">+49&nbsp;173&nbsp;6735291</a></p>
         <p class="altc">Oder schreiben: <a href="mailto:coaching@lauraschnelle.com">coaching@lauraschnelle.com</a></p>
       </div>
-      <form class="reveal" onsubmit="event.preventDefault();this.querySelector('.demo-ok').style.display='block';">
-        <div class="demo-note">Demo-Formular — im Live-Betrieb landet die Anfrage direkt in Lauras Postfach.</div>
+      <form id="cf" class="reveal">
         <label for="name">Name</label>
         <input id="name" name="name" placeholder="Dein Name" required>
         <label for="firma">Firma</label>
         <input id="firma" name="firma" placeholder="Unternehmen">
-        <label for="mail">E-Mail</label>
-        <input id="mail" name="mail" type="email" placeholder="name@firma.de" required>
+        <label for="email">E-Mail</label>
+        <input id="email" name="email" type="email" placeholder="name@firma.de" required>
         <label for="msg">Worum geht es?</label>
         <textarea id="msg" name="msg" placeholder="Ein paar Sätze zu eurem Ziel."></textarea>
+        <div class="hp" aria-hidden="true"><label for="_honey">Bitte leer lassen</label><input id="_honey" name="_honey" tabindex="-1" autocomplete="off"></div>
         <div class="consent">
           <input id="ok" type="checkbox" required>
-          <label for="ok">Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden. (Datenschutz)</label>
+          <label for="ok">Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage verwendet werden. (<a href="datenschutz.html">Datenschutz</a>)</label>
         </div>
         <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Anfrage senden</button>
-        <p class="demo-ok" style="display:none;color:var(--apricot);margin-top:14px;font-size:var(--step--1)">Danke — im Live-Betrieb wäre deine Anfrage jetzt unterwegs.</p>
+        <p id="cfmsg" class="form-msg" role="status" aria-live="polite"></p>
       </form>
     </div>
   </div>
