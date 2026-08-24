@@ -275,6 +275,8 @@ form input::placeholder,form textarea::placeholder{color:#8482A0}
 .foot-col a:hover{color:#fff}
 .foot-bot{margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.08);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.82rem;color:#6E6A7E}
 .foot-bot .made{color:var(--apricot)}
+.foot-bot .made a{color:inherit;text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:from-font}
+.foot-bot .made a:hover{text-decoration-thickness:2px}
 
 .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease), transform .7s var(--ease)}
 .js .reveal.in{opacity:1;transform:none}
